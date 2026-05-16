@@ -13,7 +13,7 @@ app.use(bodyParser.json({ limit: "10mb" }));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
 const { default: mongoose } = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/native").then(() => {
+mongoose.connect("mongodb+srv://groot:FZQdeJA2TSxoHCcO@jatink8059.quqwq.mongodb.net/native").then(() => {
   console.log("mongodb connected");
 });
 
